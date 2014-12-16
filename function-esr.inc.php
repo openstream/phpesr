@@ -126,14 +126,14 @@ function esr($payment_for, $in_favour_of, $bank_account, $invoice_amount, $refer
 		// Betrag links
 		$pdf->setFontSize(12);
 		$pdf->SetXY(30, 96);
-		$pdf->Cell(41,5,$invoice_amount_left,BORDER,'',R);
+		$pdf->Cell(41,5,$invoice_amount_left,BORDER,'','R');
 	
 		$pdf->SetXY(77, 96);
 		$pdf->Cell(10,5,$invoice_amount_right,BORDER);
 				
 		// Betrag rechts
 		$pdf->SetXY(93, 96);
-		$pdf->Cell(41,5,$invoice_amount_left,BORDER,'',R);
+		$pdf->Cell(41,5,$invoice_amount_left,BORDER,'','R');
 	
 		$pdf->SetXY(140, 96);
 		$pdf->Cell(10,5,$invoice_amount_right,BORDER);
