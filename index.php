@@ -23,7 +23,7 @@ $identification = "200002";
 $reference_no = "444333200006";
 $esr_no = "010040677";
 
-switch ($_POST['action']) {
+switch (array_key_exists('action', $_POST) && $_POST['action']) {
 	case "generatepdf": 	
 		esr($payment_for, $in_favour_of , $bank_account, $invoice_amount, $identification, $reference_no);
 		break;
